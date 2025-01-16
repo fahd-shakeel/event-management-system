@@ -1,0 +1,137 @@
+#login{
+    display: flex;
+    height:100vh;
+}
+
+#login #heading{
+    width:60%;
+    /* border:2px solid red; */
+    height:100%;
+    text-align: center;
+    align-content: center;
+}
+
+#login #heading p{
+    align-items: center;
+    /* border:2px solid grey; */
+    color:#E34234;
+    font-size:10vw;
+}
+
+#login #username-password{
+    width:40%;
+    /* border:2px solid blue; */
+    margin:auto 0;
+    text-align: center;
+    height:100%;
+    align-content: center;
+    background-color: #E34234;
+}
+
+#login #username-password #username input, #login #username-password #password input{
+    /* border:2px solid red; */
+    width:90%;
+    height: 20px;
+    border:2px solid white;
+    border-radius:5px;
+}
+
+#login #username-password #username input, #login #username-password #password input:focus{
+    outline: none;
+}
+
+#login #username-password h1{
+    /* border:2px solid blue; */
+    margin-bottom:1.25em;
+    color:white;
+}
+
+#login #username p, #login #password p{
+    /* border:2px solid grey; */
+    width:90%;  
+    margin:0.5em auto;
+    text-align: left;
+    font-size: 1.5em;
+    color:white;
+    
+}
+
+#username-password #form{
+    border:5px solid white;
+    width:80%;
+    margin:0 auto;
+    padding:50px 10px;
+    border-radius:30px;
+}
+
+#username-password #signup-submit{
+    display: flex;
+    justify-content: space-between;
+    width:80%;
+    margin:1.5em auto;
+}
+
+#username-password #signup-submit button{
+    background-color: #E34234;
+    color: white;
+    width:auto;
+    height:auto;
+    font-family: "Roboto";
+    font-size: 1.25em;
+    font-weight: 400;
+    border-radius:5px;
+    border:2px solid white;
+}
+
+#username-password #signup-submit button:hover{
+    background-color: white;
+    color: #E34234;
+    border:2px solid white;
+}
+
+@media (max-width:760px){
+    #login{
+        display: block;
+    }
+    #login #heading{
+        width:90%;
+        /* border:2px solid red; */
+        text-align: center;
+        margin:0 auto;
+        height: auto;
+    }
+    #login #heading p{
+        /* border:2px solid grey; */
+        color:#E34234;
+        font-size:10vw;
+    }
+    #login #username-password{
+        width:90%;
+        margin:0 auto;
+        background-color: white;
+        height: auto;
+    }
+    #username-password #form{
+        border:5px solid #E34234;
+        width:95%;
+    }
+    #login #username-password #username input, #login #username-password #password input{
+        border:2px solid #E34234;
+    }
+    #login #username-password h1{
+        color:#E34234;
+    }
+    #login #username p, #login #password p{
+        color:#E34234;
+    }
+    #username-password #signup-submit button{
+        background-color: white;
+        color: #E34234;
+        border:2px solid #E34234;
+    }
+    #username-password #signup-submit button:hover{
+        background-color: #E34234;
+        color: white;
+        border:2px solid white;
+    }
+}
